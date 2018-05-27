@@ -1,0 +1,136 @@
+
+body{
+  font-family: 'Sunflower', sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+  padding:0;
+  margin:0;
+}
+/* Global */
+
+/* .=class #=ID */
+.container{
+  width:95%;
+  margin:auto;
+  overflow:hidden
+}
+
+/* Header*/
+header{
+  padding-top: 10px;
+  min-height: 40px;
+  padding-bottom: 100px;
+}
+
+header a{
+  color:#7f8284;
+  text-decoration:none;
+  font-size:14px;
+}
+
+header a:hover{
+  color:black;
+  font-weight: 100;
+}
+
+header ul{
+  margin:0;
+  padding:0;
+}
+
+/* Padding Top Right Bottom Left */
+header li{
+  float:left;
+  display:inline;
+  padding: 5px 5px 0 5px;
+}
+
+header nav{
+  float:right;
+  margin-top:7px;
+}
+
+/* Showcase */
+#showcase{
+  min-height: 400px;
+  text-align: center;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 10px 0px 10px 0px;
+}
+input[type=text] {
+    width: 500px;
+    box-sizing: border-box;
+    border: 2px solid #2c3a44;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 30px;
+    box-shadow: .5px .5px;
+}
+
+input[type=text]:focus {
+    width: 500px;
+}
+
+.button_1 {
+    background-color: #a9abad;
+    border: 1px;
+    color: #7f8284;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.button_1:hover{
+  color:black;
+}
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(may_1second.png) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
